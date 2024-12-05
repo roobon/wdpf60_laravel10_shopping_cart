@@ -61,4 +61,8 @@ class BookController extends Controller
             session()->flash('success', 'Updated cart.');
         }
     }
+
+    public function checkout(){
+        return view('checkout');
+    }
 }
